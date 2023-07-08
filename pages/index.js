@@ -61,6 +61,7 @@ export default function Home() {
       </main>
 
       <footer>
+				<p>this is a footer</p>
       </footer>
 
       <style jsx>{`
