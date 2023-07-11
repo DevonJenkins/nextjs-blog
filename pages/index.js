@@ -25,18 +25,19 @@ export default function Home({ allPostsData }) {
 				<section className={utilStyles.headingMd}>
 					<p>Hello I am Devon...</p>
 					<p>This will be a description</p>
-					<Link href="/posts/first-post">First Post</Link>
 				</section>
 				<section>
 					<h2 className='utilStyles.headingLg'>Blog</h2>
 					<ul>
 						{allPostsData.map(({ id, date, title }) => (
 							<li key={id}>
-								{title}
+								<Link href={`/posts/${id}`}>
+									{title}
+								</Link>
 								<br />
-								{id}
-								<br />
-								{date}
+								<small className={utilStyles.lightText}>
+									<Date dateString={date}/>
+								</small>
 								<br />
 							</li>
 						))}
