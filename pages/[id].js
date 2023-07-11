@@ -1,6 +1,6 @@
-import Layout from "../../components/layout.js";
+import Layout from "../components/layout.js";
 
-import { getAllPostIds, getPostData } from "../../lib/posts.js";
+import { getAllPostIds, getPostData } from "../lib/posts.js";
 
 export default function Post({ postData }) {
 	return (
