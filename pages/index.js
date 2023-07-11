@@ -31,7 +31,7 @@ export default function Home({ allPostsData }) {
 					<h2 className='utilStyles.headingLg'>Blog</h2>
 					<ul>
 						{allPostsData.map(({ id, date, title }) => (
-							<li>
+							<li key={id}>
 								{title}
 								<br />
 								{id}
