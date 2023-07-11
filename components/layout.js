@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link';
 
 const name = 'Devon Jenkins'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Devon Jenkins'
 
 export default function Layout({ children, home }) {
 	return (
@@ -21,19 +21,18 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
 			</Head>
-			<header className='styles.header'>
-				header content
+			<header className={ styles.header }>
 				{home? (
 					<>
 						<Image
 							priority
 							src="/images/profilePhoto.jpeg"
-							className={ultilStyles.borderCircle}
+							className={utilStyles.borderCircle}
 							height={144}
 							width={144}
 							alt=""
 						/>
-						<h1 className={ultilStyles.heading2Xl}>{name}</h1>
+						<h1 className={utilStyles.heading2Xl}>{name}</h1>
 					</>
 				) : (
 					<>
@@ -41,7 +40,7 @@ export default function Layout({ children, home }) {
 						<Image
 							priority
 							src="/images/profilePhoto.jpeg"
-							className='{utilStyles.borderCircle}'
+							className={utilStyles.borderCircle}
 							height={108}
 							width={108}
 							alt=""
@@ -59,11 +58,9 @@ export default function Layout({ children, home }) {
 			<main>{children}</main>
 
 			{!home && (
-				
 				<div>
 					<Link href="/"> Home </Link>
 				</div>
-
 			)}
 		</div>
 	);
