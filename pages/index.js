@@ -30,7 +30,7 @@ export default function Home({ allPostsData }) {
 					<h2 className='utilStyles.headingLg'>Blog</h2>
 					<ul>
 						{allPostsData.map(({ id, date, title }) => (
-							<li key={id}>
+							<li className={utilStyles.listItem} key={id}>
 								<Link href={`/posts/${id}`}>
 									{title}
 								</Link>
@@ -38,7 +38,6 @@ export default function Home({ allPostsData }) {
 								<small className={utilStyles.lightText}>
 									<Date dateString={date}/>
 								</small>
-								<br />
 							</li>
 						))}
 					</ul>

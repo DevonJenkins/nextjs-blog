@@ -1,12 +1,12 @@
 //------Components-------
-import Layout from "../../components/layout";
-import Date from "../../components/date"
+import Layout from "../../components/layout.js";
+import Date from "../../components/date.js"
 
 //------Next Components-------
 import Head from "next/head";
 
 //------Lib-------
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllPostIds, getPostData } from "../../lib/posts.js";
 
 //------Styles-------
 import utilStyles from '../../styles/utils.module.css'
