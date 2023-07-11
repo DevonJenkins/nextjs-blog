@@ -1,12 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "clsx": "^1.2.1",
+    "date-fns": "^2.30.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
