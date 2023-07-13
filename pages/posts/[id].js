@@ -30,7 +30,6 @@ export default function Post({ postData }) {
 
 export async function getStaticPaths() {
 	//return a list of possible values for id
-	console.log('getStaticPaths')	
 	const paths = getAllPostIds();
 	return {
 		paths,
@@ -40,7 +39,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
 	// Fetch necessary data for the blog post using params.id
-	console.log('getStaticProps')	
 	const postData = await getPostData(params.id);
 	return {
 		props: {
